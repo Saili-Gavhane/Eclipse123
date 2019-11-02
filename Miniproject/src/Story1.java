@@ -10,6 +10,7 @@ public class Story1 {
 	 ConnectionDemo c = new ConnectionDemo();
 	  Connection c1=null;
 	  c1=c.connect();
+	  System.out.println("connection established");
 	  System.out.println("Enter the date of which you want to display details");
 	  Scanner sc = new Scanner(System.in);
 		String date1=sc.next();
