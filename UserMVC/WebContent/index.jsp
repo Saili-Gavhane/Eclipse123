@@ -8,7 +8,7 @@
 </head>
 <body>
 <center>
-	<h1>Add or Login</h1>
+	<h1 style = "color:red;">Add or Login</h1>
 	<br><br>
 	<a href = "Login.jsp">Login</a>
 	<br><br>
