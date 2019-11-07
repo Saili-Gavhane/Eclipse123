@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" import="com.LTI.*"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,12 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-<center>
-	<h1 style = "color:red;">Add or Login</h1>
-	<br><br>
-	<a href = "Login.jsp">Login</a>
-	<br><br>
-	<a href = "Adduser.jsp">Add new user</a>
-</center>
+<%
+Student s =new Student();
+s.setFname("Siimi");
+s.setLname("dragneel");
+s.setPercentage(33);
+
+%>
+Name: <%= s.getFname() %><br>
+LastName: <%= s.getLname() %><br>
+Percentage: <%= s.getPercentage() %><br>
 </body>
 </html>
